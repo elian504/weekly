@@ -1,0 +1,135 @@
+body {
+  background: url(https://wonderfulengineering.com/wp-content/uploads/2014/07/black-wallpapers-28.jpg);
+}
+header {
+   margin: 30px 0;
+}
+button[type="submit"] {
+   background-color: black; /* color de fondo */
+   border: none; /* borde sin estilo */
+   color: white; /* color de letra */
+   padding: 5px 10px; /* relleno interno */
+   text-align: center; /* alineación de texto */
+   text-decoration: none; /* sin subrayado */
+   display: inline-block; /* mostrar como bloque en línea */
+   font-size: 14px; /* tamaño de letra */
+   border-radius: 5px; /* borde redondeado */
+   transition: background-color 0.3s ease; /* transición suave de color de fondo */
+   cursor: pointer; /* cambiar el cursor en hover */
+ }
+ 
+ /* Cambiar el color de fondo en hover */
+ button[type="submit"]:hover {
+   background-color:  #ff00ff;
+ }
+.contenido {
+   padding:20px;
+}
+.contenido-principal {
+   background-color: rgb(34, 27, 27);
+   padding: 30px;
+   border-radius: 20px;
+
+}
+.presupuesto p{
+   margin-bottom: 0;
+   font-weight: bold;
+   background-color: #ff00ff;
+   color: black;
+}
+.presupuesto p span {
+   font-weight: normal;
+}
+#gastos {
+   margin-bottom: 30px;
+}
+h1{
+   font-family: 'Raleway', sans-serif;
+   font-weight: 100;
+   font-size: 3rem;
+ font-weight: bold;
+ margin-top: 2rem;
+ transition: color 0.5s ease;
+ text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+h1:hover {
+   color: #ff00ff;
+ }
+ h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+font-weight: bold;
+margin-top: 2rem;
+transition: color 0.5s ease;
+text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff, 2px 2px 5px rgba(0, 0, 0, 0.3);
+text-align: center;
+ }
+ h3:hover{
+  color: #ff00ff;
+ }
+h2 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 100;
+   margin-bottom:30px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   transition: color 0.5s ease;
+   color: white;
+}
+ h2:hover {
+   color: #ff00ff;
+ }
+ label{
+   color: white;
+   font-family: cursive;
+}
+
+ label:hover {
+   color: #ff00ff;
+ }
+
+ form {
+   background-color: #000000;
+   border-radius: 5px;
+   padding: 20px;
+  
+ }
+ 
+ input[type="text"] {
+   border: none;
+   background-color: #2d272d;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 10px;
+ }
+
+.eliminar {
+  background-color: black; /* color de fondo */
+   border: none; /* borde sin estilo */
+   color: white; /* color de letra */
+   padding: 3px 6px; /* relleno interno */
+   text-align: center; /* alineación de texto */
+   text-decoration: none; /* sin subrayado */
+   display: inline-block; /* mostrar como bloque en línea */
+   font-size: 14px; /* tamaño de letra */
+   border-radius: 5px; /* borde redondeado */
+   transition: background-color 0.3s ease; /* transición suave de color de fondo */
+   cursor: pointer; /* cambiar el cursor en hover */
+   font-family: 'Raleway', sans-serif;
+}
+
+.eliminar:hover {
+  background-color: #ff00ff;
+}
+.contenidoli{
+  
+      background-color: #2d272d;
+      color: #FFFFFF;
+      padding: 7px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      color: black;
+    
+    
+}

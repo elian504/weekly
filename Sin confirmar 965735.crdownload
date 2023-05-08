@@ -1,0 +1,30 @@
+let presupuesto = prompt("Introduce tu presupuesto:");
+let restante = presupuesto;
+document.getElementById("total").innerHTML = presupuesto;
+document.getElementById("restante").innerHTML = restante;
+
+document.getElementById("agregar").addEventListener("click", agregarGasto);
+
+function agregarGasto(event) {
+    event.preventDefault();
+    const nombre = document.getElementById('gasto').value;
+    let gasto = parseInt(document.getElementById("cantidad").value);
+    restante -= gasto;
+    document.getElementById("restante").innerHTML = restante;
+    let li = document.createElement("li");
+    li.classList.add("contenidoli");
+
+    li.innerHTML = `Nombre: ${nombre} Cantidad: ${gasto} <button class="eliminar">Eliminar</button>`;
+    document.getElementById("listgroup").appendChild(li);
+    document.getElementById("gasto").value = "";
+    document.querySelectorAll(".eliminar").forEach(item => {
+      item.addEventListener("click", eliminarGasto);
+    });
+  }
+  
+  function eliminarGasto(event) {
+    let gasto = parseInt(event.target.parentNode.firstChild.textContent);
+    restante += gasto;
+    document.getElementById("restante").innerHTML = restante;
+    event.target.parentNode.remove();
+  }
